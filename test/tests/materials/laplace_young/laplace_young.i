@@ -1,8 +1,8 @@
 [Mesh/gmg]
   type = GeneratedMeshGenerator
   dim = 2
-  nx = 100
-  ny = 100
+  nx = 25
+  ny = 25
 []
 
 [Variables/u]
@@ -38,6 +38,7 @@
 [Executioner]
   type = Steady
   solve_type = 'NEWTON'
+  # petsc_options = '-snes_test_jacobian'
   petsc_options_iname = '-pc_type -pc_hypre_type'
   petsc_options_value = 'hypre boomeramg'
 []
