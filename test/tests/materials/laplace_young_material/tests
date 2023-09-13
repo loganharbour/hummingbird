@@ -1,0 +1,7 @@
+[Tests]
+  [ad_test]
+    type = Exodiff
+    input = ad_laplace_young_material.i
+    exodiff = ad_laplace_young_material_out.e
+  []
+[]
